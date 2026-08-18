@@ -1,0 +1,6 @@
+{
+  "name": "ITC Impianti e Climatizzazione Roma",
+  "description": "Sito ufficiale I.T.C. Impianti Termici, Climatizzazione, Caldaie, Fotovoltaico e Centro Assistenza Tecnica Ufficiale Vaillant a Roma, Pomezia e Torvaianica.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
