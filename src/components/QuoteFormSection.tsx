@@ -11,6 +11,7 @@ import {
   AlertCircle,
   ArrowRight
 } from 'lucide-react';
+import posthog from 'posthog-js';
 import { CONTACT_INFO, SERVICE_OPTIONS } from '../data/content';
 import { QuoteFormData } from '../types';
 
@@ -51,6 +52,10 @@ export const QuoteFormSection: React.FC<QuoteFormSectionProps> = ({
     }
 
     setErrorMsg(null);
+    posthog.capture('quote_requested', {
+      source: 'form_section',
+      service_type: formData.serviceType,
+    });
     setSubmitted(true);
   };
 
